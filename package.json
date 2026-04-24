@@ -1,0 +1,40 @@
+{
+  "name": "pickless-mcp",
+  "version": "0.1.0",
+  "description": "Param's taste profile as an MCP tool — any Claude session can call pickless_snack() and get his pick",
+  "main": "dist/index.js",
+  "bin": {
+    "pickless-mcp": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "ts-node src/index.ts",
+    "prepare": "pnpm build"
+  },
+  "keywords": [
+    "mcp",
+    "food",
+    "pickless",
+    "claude"
+  ],
+  "author": "Param Vaswani",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/paramxclaudedev/pickless-mcp"
+  },
+  "homepage": "https://picklessai.vercel.app",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.10.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.4.5"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "files": [
+    "dist/**/*"
+  ]
+}
